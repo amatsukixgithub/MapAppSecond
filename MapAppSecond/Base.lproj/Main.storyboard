@@ -27,15 +27,23 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="h85-dq-7or">
                                 <rect key="frame" x="0.0" y="78" width="414" height="784"/>
                             </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SDb-rB-aSy">
+                                <rect key="frame" x="373" y="830" width="25" height="24"/>
+                                <connections>
+                                    <action selector="changeMapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="th3-Fo-Rib"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="kkr-LY-av1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Qeq-gi-zM3"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kkr-LY-av1" secondAttribute="trailing" id="RwC-aY-8a4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SDb-rB-aSy" secondAttribute="bottom" constant="8" id="YtL-DM-9Li"/>
                             <constraint firstItem="h85-dq-7or" firstAttribute="top" secondItem="kkr-LY-av1" secondAttribute="bottom" id="awm-O1-hlC"/>
                             <constraint firstItem="kkr-LY-av1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ePW-KP-I1r"/>
                             <constraint firstItem="h85-dq-7or" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fNP-6G-58t"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SDb-rB-aSy" secondAttribute="trailing" constant="16" id="r6Z-2i-59K"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="h85-dq-7or" secondAttribute="bottom" id="tZU-Ox-UZk"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="h85-dq-7or" secondAttribute="trailing" id="y0U-TJ-zEl"/>
                         </constraints>
